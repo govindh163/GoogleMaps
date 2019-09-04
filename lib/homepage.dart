@@ -16,6 +16,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
+  //adding Markers to view the Bottomsheet
+    
     allMarkers.add(Marker(markerId: MarkerId("BookStore"),
         draggable:true,
         infoWindow: InfoWindow(title: 'book store'),
@@ -61,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     compassEnabled: true,
                     onMapCreated: onMapCreated,
                     initialCameraPosition: CameraPosition(
-                        target: LatLng(currentLocation.latitude,currentLocation.longitude),
+                        target: LatLng(currentLocation.latitude,currentLocation.longitude),//getting Current Location Of User
                         zoom: 30.0),
                     markers: Set.from(allMarkers),
                   )
@@ -79,14 +81,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       elevation: 5,
                       backgroundColor: Colors.teal[200],
                       onPressed: () {
-                        _changeMapType();
+                        _changeMapType();//Satellite View And normal View Changing
                         print('Changing the Map Type');
                       }),),
                 Positioned(
                   top:670,
                   right:150,
                   child: InkWell(
-                    onTap: movetoChennai,
+                    onTap: movetoChennai,// Moves User to chennai
                     child: Container(
                       height: 40.0,
                       width: 40.0,
@@ -102,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   top:670,
                   right:50,
                   child: InkWell(
-                    onTap: movetoMadurai,
+                    onTap: movetoMadurai,//Moves USer to Madurai
                     child: Container(
                       height: 40.0,
                       width: 40.0,
@@ -119,6 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ));
   }
+  // Function to change Views
   void _changeMapType() {
     setState(() {
       _defaultMapType = _defaultMapType == MapType.normal ? MapType.satellite : MapType.normal;
@@ -142,6 +145,7 @@ class _MyHomePageState extends State<MyHomePage> {
       CameraPosition(target: LatLng(9.9252, 78.1198), zoom: 12.0),
     ));
   }
+  // bottom Sheet Popup Function
   void _showModal() {
     Future<void> future = showModalBottomSheet<void>(
       context: context,
@@ -150,7 +154,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Wrap(
             children: <Widget>[
               ListTile(
-                title: Text("S.no= 1 "),
+                title: Text("S.no= 1 "),//Statically Now but will have option to make it dynamic by Firebase
               ),
               ListTile(
                 title: Text("Name of book= \"The Theory of Karma\" "),
