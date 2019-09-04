@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "63562862982",
+    "firebase_url": "https://fir-demo-76068.firebaseio.com",
+    "project_id": "fir-demo-76068",
+    "storage_bucket": "fir-demo-76068.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63562862982:android:072b48f3c7cbda3e",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63562862982-1d700p2169g5qed31dfdjcru5bvoa9va.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_app",
+            "certificate_hash": "97d0894004d9682e2fb9a6cec8d547ddb15780c0"
+          }
+        },
+        {
+          "client_id": "63562862982-ku383v587nr034nkk7jojpng92vl6gvh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2bYYUuPOqQ6J8KmMlyv2WKv71PEOESoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63562862982-ku383v587nr034nkk7jojpng92vl6gvh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63562862982:android:d7650c7e017546de",
+        "android_client_info": {
+          "package_name": "com.example.flutter_phonesignin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63562862982-5b92mbrkc2cvc8o2s14bchin9n8jqt67.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_phonesignin",
+            "certificate_hash": "97d0894004d9682e2fb9a6cec8d547ddb15780c0"
+          }
+        },
+        {
+          "client_id": "63562862982-ku383v587nr034nkk7jojpng92vl6gvh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2bYYUuPOqQ6J8KmMlyv2WKv71PEOESoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63562862982-ku383v587nr034nkk7jojpng92vl6gvh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63562862982:android:6319715f9597337f",
+        "android_client_info": {
+          "package_name": "com.example.flutter_waterdash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63562862982-3lco1iv0bn9cde3qs3ok7u5cu1f51fmp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_waterdash",
+            "certificate_hash": "97d0894004d9682e2fb9a6cec8d547ddb15780c0"
+          }
+        },
+        {
+          "client_id": "63562862982-ku383v587nr034nkk7jojpng92vl6gvh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2bYYUuPOqQ6J8KmMlyv2WKv71PEOESoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63562862982-ku383v587nr034nkk7jojpng92vl6gvh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63562862982:android:2418e20fdbe2343c",
+        "android_client_info": {
+          "package_name": "com.example.googlemaps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63562862982-9fi63npiklp5n8k4mt28dgo5sto5125t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.googlemaps",
+            "certificate_hash": "97d0894004d9682e2fb9a6cec8d547ddb15780c0"
+          }
+        },
+        {
+          "client_id": "63562862982-ku383v587nr034nkk7jojpng92vl6gvh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2bYYUuPOqQ6J8KmMlyv2WKv71PEOESoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63562862982-ku383v587nr034nkk7jojpng92vl6gvh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
