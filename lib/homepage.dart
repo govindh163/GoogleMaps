@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:location/location.dart';
 class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -10,12 +11,23 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   bool mapToggle = false;
   var currentLocation;
+  var changeloca;
+  var location = new Location();
+  Map<String, double> userLocation;
   GoogleMapController mapController;
   List<Marker> allMarkers=[];
 
   @override
   void initState() {
+
     super.initState();
+    location.onLocationChanged().listen((LocationData currlo) {
+      setState(() {
+        changeloca=currlo;
+      });
+      print(changeloca.latitude);
+      print(changeloca.longitude);
+    });
     allMarkers.add(Marker(markerId: MarkerId("BookStore"),
         draggable:true,
         infoWindow: InfoWindow(title: 'book store'),
@@ -32,6 +44,15 @@ class _MyHomePageState extends State<MyHomePage> {
         },
         position: LatLng(12.9010, 80.2279)
     ),);
+    allMarkers.add(Marker(markerId: MarkerId("BookStore"),
+        draggable:true,
+        infoWindow: InfoWindow(title: 'My home'),
+        onTap: () {
+          _showModal();
+        },
+        position: LatLng(10.930572, 79.272582)
+    ),);
+
     Geolocator().getCurrentPosition().then((currloc) {
       setState(() {
         currentLocation = currloc;
@@ -44,14 +65,15 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
         appBar: AppBar(
-          title: Text('Map Demo for OptN Technologies'),
+          title: Text('Map Demo '),
         ),
         body: Column(
           children: <Widget>[
             Stack(
               children: <Widget>[
-                Container(
+                 Container(
                   height: MediaQuery.of(context).size.height - 120,
                   width: double.infinity,
                   child: mapToggle
@@ -71,6 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         style: TextStyle(fontSize: 20.0),
                       )),
                 ),
+
                 Positioned(
                   top: 90,
                   right: 5,
@@ -139,7 +162,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   movetoMadurai() {
     mapController.animateCamera(CameraUpdate.newCameraPosition(
-      CameraPosition(target: LatLng(9.9252, 78.1198), zoom: 12.0),
+      CameraPosition(target: LatLng(10.930572, 79.272582), zoom: 12.0),
     ));
   }
   void _showModal() {
