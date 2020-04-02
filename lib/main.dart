@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Screens/Appsetting.dart';
 import 'geolocator.dart';
 import 'homepage.dart';
 import 'location.dart';
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       home: MyHomePage(),
     routes:<String, WidgetBuilder>{
       '/home': (context) => MyHomePage(),
+      '/info': (context) => MyDeviceInfo(),
     //     '/crop': (context) => CropImage(),
     }
     );

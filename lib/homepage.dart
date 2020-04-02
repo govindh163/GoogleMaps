@@ -178,8 +178,8 @@ class _MyHomePageState extends State<MyHomePage> {
                             size: 20,
                             color: Colors.green,
                           ),
-                          title: Text('Check BIO metrics'),
-                          onTap: () => Navigator.pushNamed(context, "/auth")),
+                          title: Text('Device info'),
+                          onTap: () => Navigator.pushNamed(context, "/info")),
                     ],
                   ),
                 )
