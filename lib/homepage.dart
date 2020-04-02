@@ -14,7 +14,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final Set<Polyline> polyline = {};
+//  final Set<Polyline> polyline = {};
   ScrollController _scrollController = new ScrollController();
   List<LatLng> routeCoords;
 
@@ -201,7 +201,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ? GoogleMap(
                           mapType: _defaultMapType,
                           myLocationEnabled: true,
-                          polylines: polyline,
+                      //    polylines: polyline,
                           compassEnabled: true,
                           onMapCreated: onMapCreated,
                           initialCameraPosition: CameraPosition(
@@ -277,14 +277,14 @@ class _MyHomePageState extends State<MyHomePage> {
   void onMapCreated(controller) {
     setState(() {
       mapController = controller;
-      polyline.add(Polyline(
-          polylineId: PolylineId('route1'),
-          visible: true,
-          points: routeCoords,
-          width: 4,
-          color: Colors.blue,
-          startCap: Cap.roundCap,
-          endCap: Cap.buttCap));
+//      polyline.add(Polyline(
+//          polylineId: PolylineId('route1'),
+//          visible: true,
+//          points: routeCoords,
+//          width: 4,
+//          color: Colors.blue,
+//          startCap: Cap.roundCap,
+//          endCap: Cap.buttCap));
     });
   }
 
