@@ -12,6 +12,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MyHomePage(),
+    routes:<String, WidgetBuilder>{
+      '/home': (context) => MyHomePage(),
+    //     '/crop': (context) => CropImage(),
+    }
     );
   }
 }
