@@ -151,7 +151,6 @@ class _MyHomePageState extends State<MyHomePage> {
             )
           ],
         ),
-
         drawer: Drawer(
           child: SingleChildScrollView(
             controller: _scrollController,
@@ -172,6 +171,22 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: const EdgeInsets.only(left: 15.0),
                   child: Column(
                     children: <Widget>[
+                      ListTile(
+                          leading: Icon(
+                            Icons.info,
+                            size: 20,
+                            color: Colors.green,
+                          ),
+                          title: Text('Device info'),
+                          onTap: () => Navigator.pushNamed(context, "/info")),
+                      ListTile(
+                          leading: Icon(
+                            Icons.info,
+                            size: 20,
+                            color: Colors.green,
+                          ),
+                          title: Text('Google Sheet'),
+                          onTap: () => Navigator.pushNamed(context, "/sheet")),
                       ListTile(
                           leading: Icon(
                             Icons.fingerprint,

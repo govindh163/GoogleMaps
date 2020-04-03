@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:googlemaps/Screens/Sheets.dart';
 import 'Screens/Appsetting.dart';
 import 'geolocator.dart';
 import 'homepage.dart';
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
     routes:<String, WidgetBuilder>{
       '/home': (context) => MyHomePage(),
       '/info': (context) => MyDeviceInfo(),
+      '/sheet': (context) => GoogleSheets(),
     //     '/crop': (context) => CropImage(),
     }
     );
