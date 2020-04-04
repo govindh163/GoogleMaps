@@ -1,7 +1,9 @@
 
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:googlemaps/Controller/sheetcontroller.dart';
 import 'package:googlemaps/Models/sheetmodel.dart';
+import 'package:shake/shake.dart';
 
 class GoogleSheets extends StatefulWidget {
   @override
@@ -23,7 +25,14 @@ class _GoogleSheetsState extends State<GoogleSheets> {
   TextEditingController mobileNoController = TextEditingController();
   TextEditingController feedbackController = TextEditingController();
   TextEditingController ageController = TextEditingController();
-
+  void initState() {
+    super.initState();
+    ShakeDetector detector = ShakeDetector.autoStart(onPhoneShake: () {
+      Fluttertoast.showToast(
+          msg: "This is Center Short Toast",
+      );
+    });
+  }
   void _submitForm() {
 
     if(_formKey.currentState.validate()){
