@@ -181,9 +181,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           onTap: () => Navigator.pushNamed(context, "/info")),
                       ListTile(
                           leading: Icon(
-                            Icons.info,
+                            Icons.publish,
                             size: 20,
-                            color: Colors.green,
+                            color: Colors.pinkAccent,
                           ),
                           title: Text('Google Sheet'),
                           onTap: () => Navigator.pushNamed(context, "/sheet")),

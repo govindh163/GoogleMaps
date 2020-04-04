@@ -64,90 +64,89 @@ class _GoogleSheetsState extends State<GoogleSheets> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Apply Data"),),
       key:  _scaffoldKey,
-      body: Center(
-        child: Container(
-          padding: EdgeInsets.symmetric(vertical: 50,horizontal: 24),
-          child: SingleChildScrollView(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Form(
-                  key: _formKey,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      TextFormField(
-                        controller: nameController,
-                        validator: (value){
-                          if(value.isEmpty){
-                            return "Enter Valid Name";
-                          }
-                          return null;
-                        },
-                        decoration: InputDecoration(
-                            labelText: "Name"
-                        ),
+      body: Container(
+        padding: EdgeInsets.symmetric(vertical: 50,horizontal: 24),
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              Form(
+                key: _formKey,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    TextFormField(
+                      controller: nameController,
+                      validator: (value){
+                        if(value.isEmpty){
+                          return "Enter Valid Name";
+                        }
+                        return null;
+                      },
+                      decoration: InputDecoration(
+                          labelText: "Name"
                       ),
-                      TextFormField(
-                        controller: emailController,
-                        validator: (value){
-                          if(value.isEmpty){
-                            return "Enter Valid Email";
-                          }
-                          return null;
-                        },
-                        decoration: InputDecoration(
-                            labelText: "Email"
-                        ),
+                    ),
+                    TextFormField(
+                      controller: emailController,
+                      validator: (value){
+                        if(value.isEmpty){
+                          return "Enter Valid Email";
+                        }
+                        return null;
+                      },
+                      decoration: InputDecoration(
+                          labelText: "Email"
                       ),
-                      TextFormField(
-                        controller: mobileNoController,
-                        validator: (value){
-                          if(value.isEmpty){
-                            return "Enter Valid Phone Number";
-                          }
-                          return null;
-                        },
-                        decoration: InputDecoration(
-                            labelText: "Phone Number"
-                        ),
+                    ),
+                    TextFormField(
+                      controller: mobileNoController,
+                      validator: (value){
+                        if(value.isEmpty){
+                          return "Enter Valid Phone Number";
+                        }
+                        return null;
+                      },
+                      decoration: InputDecoration(
+                          labelText: "Phone Number"
                       ),
-                      TextFormField(
-                        controller: feedbackController,
-                        validator: (value){
-                          if(value.isEmpty){
-                            return "Enter Valid Feedback";
-                          }
-                          return null;
-                        },
-                        decoration: InputDecoration(
-                            labelText: "Feedback"
-                        ),
+                    ),
+                    TextFormField(
+                      controller: feedbackController,
+                      validator: (value){
+                        if(value.isEmpty){
+                          return "Enter Valid Feedback";
+                        }
+                        return null;
+                      },
+                      decoration: InputDecoration(
+                          labelText: "Feedback"
                       ),
-                      TextFormField(
-                        controller: ageController,
-                        validator: (value){
-                          if(value.isEmpty){
-                            return "Enter Valid Age";
-                          }
-                          return null;
-                        },
-                        decoration: InputDecoration(
-                            labelText: "Age Now"
-                        ),
+                    ),
+                    TextFormField(
+                      controller: ageController,
+                      validator: (value){
+                        if(value.isEmpty){
+                          return "Enter Valid Age";
+                        }
+                        return null;
+                      },
+                      decoration: InputDecoration(
+                          labelText: "Age Now"
                       ),
-                      RaisedButton(
-                        color: Colors.blue,
-                        textColor: Colors.white,
-                        onPressed: _submitForm,
-                        child: Text('Submit Feedback'),
-                      )
-                    ],
-                  ),
-                )
-              ],
-            ),
+                    ),
+                    RaisedButton(
+                      color: Colors.blue,
+                      textColor: Colors.white,
+                      onPressed: _submitForm,
+                      child: Text('Submit Feedback'),
+                    )
+                  ],
+                ),
+              )
+            ],
           ),
         ),
       ),
