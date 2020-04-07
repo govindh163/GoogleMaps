@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:googlemaps/Screens/Sheets.dart';
+import 'package:googlemaps/Screens/draw.dart';
 import 'Screens/Appsetting.dart';
 import 'geolocator.dart';
 import 'homepage.dart';
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       '/home': (context) => MyHomePage(),
       '/info': (context) => MyDeviceInfo(),
       '/sheet': (context) => GoogleSheets(),
+      '/draw': (context) => DrawCircle(),
     //     '/crop': (context) => CropImage(),
     }
     );

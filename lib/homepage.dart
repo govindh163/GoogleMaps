@@ -195,6 +195,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                           title: Text('Device info'),
                           onTap: () => Navigator.pushNamed(context, "/info")),
+                      ListTile(
+                          leading: Icon(
+                            Icons.art_track,
+                            size: 20,
+                            color: Colors.blueAccent,
+                          ),
+                          title: Text('Draw Circle'),
+                          onTap: () => Navigator.pushNamed(context, "/draw")),
                     ],
                   ),
                 )
