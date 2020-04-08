@@ -175,7 +175,8 @@ class _MyHomePageState extends State<MyHomePage> {
                        getList('Google Sheet', '/sheet'),
                        getList("Draw Circle", "/draw"),
                        getList("Select button", "/button"),
-                       getList("Overlay Sheet", "/overlay")
+                       getList("Overlay Sheet", "/overlay"),
+                       getList("User guide", "/userguide")
                     ],
                   ),
                 )
