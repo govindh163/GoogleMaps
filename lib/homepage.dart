@@ -171,38 +171,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: const EdgeInsets.only(left: 15.0),
                   child: Column(
                     children: <Widget>[
-                      ListTile(
-                          leading: Icon(
-                            Icons.info,
-                            size: 20,
-                            color: Colors.green,
-                          ),
-                          title: Text('Device info'),
-                          onTap: () => Navigator.pushNamed(context, "/info")),
-                      ListTile(
-                          leading: Icon(
-                            Icons.publish,
-                            size: 20,
-                            color: Colors.pinkAccent,
-                          ),
-                          title: Text('Google Sheet'),
-                          onTap: () => Navigator.pushNamed(context, "/sheet")),
-                      ListTile(
-                          leading: Icon(
-                            Icons.fingerprint,
-                            size: 20,
-                            color: Colors.green,
-                          ),
-                          title: Text('Device info'),
-                          onTap: () => Navigator.pushNamed(context, "/info")),
-                      ListTile(
-                          leading: Icon(
-                            Icons.art_track,
-                            size: 20,
-                            color: Colors.blueAccent,
-                          ),
-                          title: Text('Draw Circle'),
-                          onTap: () => Navigator.pushNamed(context, "/draw")),
+                      getList('Device info', '/info'),
+                       getList('Google Sheet', '/sheet'),
+                       getList("Draw Circle", "/draw")
                     ],
                   ),
                 )
@@ -286,7 +257,16 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ));
   }
-
+getList(heading,rotename){
+ return ListTile(
+      leading: Icon(
+        Icons.art_track,
+        size: 20,
+        color: Colors.blueAccent,
+      ),
+      title: Text(heading),
+      onTap: () => Navigator.pushNamed(context, rotename));
+}
   void _changeMapType() {
     setState(() {
       _defaultMapType = _defaultMapType == MapType.normal
