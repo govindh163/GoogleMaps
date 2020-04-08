@@ -34,6 +34,8 @@ dependencies:
   fluttertoast: ^4.0.1
   flutter_draw: ^1.1.0
   grouped_buttons: ^1.0.4
+  snapping_sheet: ^2.0.0
+
   #  google_map_polyline: ^0.2.0+1
 
   # The following adds the Cupertino Icons font to your application.

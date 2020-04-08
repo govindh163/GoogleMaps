@@ -171,9 +171,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: const EdgeInsets.only(left: 15.0),
                   child: Column(
                     children: <Widget>[
-                      getList('Device info', '/info'),
+                       getList('Device info', '/info'),
                        getList('Google Sheet', '/sheet'),
-                       getList("Draw Circle", "/draw")
+                       getList("Draw Circle", "/draw"),
+                       getList("Select button", "/button"),
+                       getList("Overlay Sheet", "/overlay")
                     ],
                   ),
                 )
