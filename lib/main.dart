@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:googlemaps/Screens/Overlaysheet.dart';
 import 'package:googlemaps/Screens/Sheets.dart';
+import 'package:googlemaps/Screens/apptime.dart';
 import 'package:googlemaps/Screens/draw.dart';
 import 'package:googlemaps/Screens/buttons.dart';
 import 'package:googlemaps/Screens/getApps.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
       '/overlay': (context) => TopSnapSheet(),
       '/userguide': (context) => UserGuide(),
       '/apps': (context) => GetApps(),
+      '/apptime': (context) => AppTime(),
     //     '/crop': (context) => CropImage(),
     }
     );

@@ -37,6 +37,7 @@ dependencies:
   snapping_sheet: ^2.0.0
   feature_discovery: ^0.8.0
   device_apps: ^1.0.9
+  app_usage: ^0.1.0
   #  google_map_polyline: ^0.2.0+1
 
   # The following adds the Cupertino Icons font to your application.

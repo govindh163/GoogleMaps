@@ -177,7 +177,8 @@ class _MyHomePageState extends State<MyHomePage> {
                        getList("Select button", "/button"),
                        getList("Overlay Sheet", "/overlay"),
                        getList("User guide", "/userguide"),
-                       getList("Get Installed Apps", "/apps")
+                       getList("Get Installed Apps", "/apps"),
+                       getList("Get Apps Usage", "/apptime"),
                     ],
                   ),
                 )
