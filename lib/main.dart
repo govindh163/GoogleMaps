@@ -3,6 +3,7 @@ import 'package:googlemaps/Screens/Overlaysheet.dart';
 import 'package:googlemaps/Screens/Sheets.dart';
 import 'package:googlemaps/Screens/draw.dart';
 import 'package:googlemaps/Screens/buttons.dart';
+import 'package:googlemaps/Screens/getApps.dart';
 import 'package:googlemaps/Screens/userguide.dart';
 import 'Screens/Appsetting.dart';
 import 'geolocator.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
       '/button': (context) => ButtonPage(),
       '/overlay': (context) => TopSnapSheet(),
       '/userguide': (context) => UserGuide(),
+      '/apps': (context) => GetApps(),
     //     '/crop': (context) => CropImage(),
     }
     );
