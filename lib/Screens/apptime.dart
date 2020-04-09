@@ -53,11 +53,13 @@ class _AppTimeState extends State<AppTime> {
         appBar: AppBar(
           title: const Text('App Usage Example'),
         ),
-        body: Text(
-          apps,
-          overflow: TextOverflow.ellipsis,
-          style: TextStyle(
-            fontSize: 20.0, // insert your font size here
+        body: SingleChildScrollView(
+          child: Text(
+            apps,
+            overflow: TextOverflow.ellipsis,
+            style: TextStyle(
+              fontSize: 20.0, // insert your font size here
+            ),
           ),
         ),
         floatingActionButton: FloatingActionButton(
