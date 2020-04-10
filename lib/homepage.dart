@@ -171,14 +171,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: const EdgeInsets.only(left: 15.0),
                   child: Column(
                     children: <Widget>[
-                       getList('Device info', '/info'),
-                       getList('Google Sheet', '/sheet'),
-                       getList("Draw Circle", "/draw"),
-                       getList("Select button", "/button"),
-                       getList("Overlay Sheet", "/overlay"),
-                       getList("User guide", "/userguide"),
-                       getList("Get Installed Apps", "/apps"),
-                       getList("Get Apps Usage", "/apptime"),
+                       getList('Device info', '/info',Icons.devices,),
+                       getList('Google Sheet', '/sheet',Icons.contact_mail),
+                       getList("Draw Circle", "/draw",Icons.border_color),
+                       getList("Select button", "/button",Icons.check_box),
+                       getList("Overlay Sheet", "/overlay",Icons.notifications_active),
+                       getList("User guide", "/userguide",Icons.supervised_user_circle),
+                       getList("Get Installed Apps", "/apps",Icons.apps),
+                       getList("Get Apps Usage", "/apptime",Icons.polymer),
                     ],
                   ),
                 )
@@ -262,10 +262,10 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ));
   }
-getList(heading,rotename){
+getList(heading,rotename,IconData icon){
  return ListTile(
       leading: Icon(
-        Icons.art_track,
+       icon,
         size: 20,
         color: Colors.blueAccent,
       ),
