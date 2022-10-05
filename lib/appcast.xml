@@ -33,7 +33,7 @@
     <item>
         <title>Version 4.0</title>
         <pubDate>Sat, 26 Jul 2014 15:20:13 +0000</pubDate>
-        <enclosure url="https://play.google.com/store/apps/details?id=com.keeggicustomerp" sparkle:version="4.0" sparkle:os="android" />
+        <enclosure url="https://play.google.com/store/apps/details?id=com.keeggicustomer" sparkle:version="4.0" sparkle:os="android" />
         <sparkle:minimumSystemVersion>1.0.1</sparkle:minimumSystemVersion>
     </item>
     <!-- A joke release testing maximumSystemVersion -->
