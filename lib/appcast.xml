@@ -40,7 +40,7 @@
     <item>
         <title>Version 5.0</title>
         <sparkle:version>5.0</sparkle:version>
-       <enclosure url="https://play.google.com/store/apps/details?id=com.comping.tenzer" sparkle:version="4.0" sparkle:os="android" />
+       <enclosure url="https://play.google.com/store/apps/details?id=com.keeggicustomer" sparkle:version="4.0" sparkle:os="android" />
         <sparkle:maximumSystemVersion>2.0.0</sparkle:maximumSystemVersion>
     </item>
   </channel>
